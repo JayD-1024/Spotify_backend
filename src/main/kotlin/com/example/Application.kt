@@ -67,7 +67,7 @@ fun Application.module() {
         // http://0.0.0.0:8080/songs/solo.mp3
         static("/") {
             staticBasePackage = "static"
-            static("/static/songs") {
+            static("songs") {
                 resources("songs")
             }
         }
